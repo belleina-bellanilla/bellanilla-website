@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .language-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .language-selector {
+            display: none; 
+            position: absolute;
+            background-color: white; 
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .language-dropdown:hover .language-selector {
+            display: block; 
+        }
+
+        .language-button {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block; 
+        }
+
+        .language-button:hover {
+            background-color: #f1f1f1; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">NEXT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links"> About Me </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">  </a>
+                </li>
+                <li class="navbar__btn language-dropdown">
+                    <a href="javascript:void(0)" class="button"> Language </a>
+                    <div class="language-selector">
+                        <a href="index.html" class="language-button">English</a>
+                        <a href="index-es.html" class="language-button">Español</a>
+                        <a href="index-pt.html" class="language-button">Português</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
